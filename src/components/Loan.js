@@ -6,10 +6,11 @@ import LoanApplicant from './LoanApplicant';
 import LoanTerms from './LoanTerms';
 import Repayment from './Repayment';
 import isValidData from "../utils/util";
-
+import "./Loan.css";
 
 const Loan = (props) => {
-  const {schema, data, title} = props;
+  const {schema, data} = props;
+  const {title} = data;
   const image = isValidData(schema.image.type, data.image) ? 
     <Image data={data.image} /> : null;
   const address = isValidData(schema["Borrower Location"].type, data["Borrower Location"]) ? 
@@ -22,8 +23,8 @@ const Loan = (props) => {
     <Repayment data={data["Repayment Schedule"]} /> : null;
   return (
     <ErrorBoundary>
+      <div className="Title">{title}</div>
       <div className="Loan">
-        <div className="title">{title}</div>
         {image}
         {address}
         {applicant}

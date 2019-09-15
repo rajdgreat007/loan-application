@@ -1,6 +1,8 @@
 import React from 'react';
 import ErrorBoundary from './ErrorBoundary';
 import Item from "./Item";
+import "./LoanTerms.css";
+
 
 const LoanTerms = (props) => {
   const {data} = props;
@@ -11,7 +13,8 @@ const LoanTerms = (props) => {
 
   return (
     <ErrorBoundary>
-      <div className="LoanTerms">
+      <div className="LoanTerms Box">
+        <div className="BoxHeading">Loan Terms</div>
         <Item heading="Duration" content={duration} />
         <Item heading="Interest Rate" content={interest} />
         <Item heading="Loan Amount" content={amount} />

@@ -1,6 +1,8 @@
 import React from 'react';
 import ErrorBoundary from './ErrorBoundary';
 import Item from "./Item";
+import "./Repayment.css";
+
 
 const Repayment = (props) => {
   const {data} = props;
@@ -14,7 +16,8 @@ const Repayment = (props) => {
   });
   return (
     <ErrorBoundary>
-      <div className="Repayment">
+      <div className="Repayment Box">
+        <div className="BoxHeading">Repayment Schedule</div>
         {repayments}
       </div>
     </ErrorBoundary>

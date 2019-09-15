@@ -1,5 +1,6 @@
 import React from 'react';
 import ErrorBoundary from './ErrorBoundary';
+import "./Image.css";
 
 const Image = (props) => {
   const {data: {url, label}} = props;
@@ -7,7 +8,7 @@ const Image = (props) => {
     <ErrorBoundary>
       <div className="Image">
         <img src={url} alt={label} />
-        <p>{label}</p>
+        <div className="label">{label}</div>
       </div>
     </ErrorBoundary>
   )

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Item.css";
 
 const getContent = (content) => {
   if(content instanceof Array){
@@ -10,7 +11,7 @@ const getContent = (content) => {
 const Item = (props) => {
   const {heading, content} = props;
   return (
-    <div>
+    <div className="Item">
       <div className="Heading">
         {heading}
       </div>

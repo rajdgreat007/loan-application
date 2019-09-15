@@ -1,0 +1,27 @@
+
+.Loan {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Title {
+  color: #fff;
+  background: #000;
+  flex: 100%;
+  padding: 20px;
+}
+
+.Box {
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px 0px;
+}
+
+.BoxHeading {
+  margin-left: 20px;
+  font-weight: bold;
+}
