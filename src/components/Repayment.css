@@ -1,3 +1,3 @@
 .Repayment {
-  width: calc(50% - 20px);
+  flex: calc(50% - 20px);
 }
