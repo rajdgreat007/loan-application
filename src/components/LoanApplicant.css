@@ -1,3 +1,3 @@
 .LoanApplicant {
-  flex: 50%;
+  width: calc(50% - 20px);
 }

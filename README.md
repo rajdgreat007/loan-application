@@ -1,3 +1,5 @@
+Web application created using React.js
+
 # Setup instructions
 
 Copy the 'loan application' folder to local machine.
